@@ -6,27 +6,53 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 In the project directory, you can run:
 
-<br/>
+<br/><br/>
+
+## Docker로 테스트 하기
+
+* Docker가 깔린 환경이라고 가정하고 작성 되었습니다!!
+* `Dockerfile이 있는 directory 위치`에서 아래의 명령어를 실행해줍니다.
+```docker
+docker build -t wirebarley-test-front .
+```
+
+<br/><br/>
+
+### TroubleShooting
+
+---
+
+저는 WSL2 환경에서 Setup 하고 개발을 하다보니 `npm install`도 잘 안되는 등 여러 issue들이 있었습니다.
+
+요약을 해보니 대부분 `NetWork Issue`들이었습니다.  
+
+[WSL2 Network Issue 해결 출처](https://stackoverflow.com/questions/55649015/could-not-resolve-host-github-com-only-in-windows-bash)
+
+
+<br/><br/>
 
 ### Version
 
+---
+
 버젼이 `최신 버젼`입니다!! <br/>
 유의해서 Setup 해주세요.
-* Package Manager : npm
-    * 8.5.0
 * node 
     * 16.14.2
+* Package Manager : npm
+    * 8.5.0
+
+<br/>
 
 ### 과정
 
 ---
 
 ### `npm install`
-npm와 node를 install 한 이후에 
+node를 install 한 이후에 
 Library를 import 해야 하므로  
 
 `npm install`을 해줍니다.
-
 
 ### `npm start`
 
