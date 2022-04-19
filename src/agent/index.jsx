@@ -1,6 +1,5 @@
 import axios from 'axios';
 import {DEV_URL} from './url';
-import {timeout} from '../util/index';
 
 export const GetExchangeRate =  (fromSend,toSend) => {
     return axios.get(`${DEV_URL}`,{

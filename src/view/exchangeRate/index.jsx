@@ -8,16 +8,14 @@ const ExchangeRatePage = () => {
     const [receptionMoney,SetReceptionMoney] = useState(null);
     
     const handleExchangeRate = async (fromSend,toSend) => {
-        if (toSend == "") {
+        if (toSend === "") {
             SetExchangeValue(null);
             alert('환율을 선택해주세요');
         }
         else {
             try {
                 const response = await GetExchangeRate(fromSend,toSend);
-                const result = response.code;
                 const data = response.data;
-                const err = response.err;
                 const message = response.message;
 
                     if (data == null) {
@@ -37,9 +35,7 @@ const ExchangeRatePage = () => {
     const handleReceptionMoney = async (fromSend,toSend,receptionMoney) => {
             try {
                 const response = await PostReceptionMoney(fromSend,toSend,receptionMoney);
-                const result = response.code;
                 const data = response.data;
-                const err = response.err;
                 const message = response.message;
 
 

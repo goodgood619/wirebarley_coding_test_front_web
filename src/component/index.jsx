@@ -1,10 +1,10 @@
 import React,{ useState } from "react";
-import {MakeLowerCase,MakeUpperCase} from '../util/index';
+import {MakeUpperCase} from '../util/index';
 
 const ExchangeInfo = ({getExchangeRate, exchangeValue,postReceptionMoney,receivedReceptionMoney}) => {
     const handleSelect = (e) => {
         getExchangeRate('usd',e.target.value);
-        if (e.target.value == "") {
+        if (e.target.value === "") {
             setToSend(null);
         }
         else {
@@ -26,8 +26,8 @@ const ExchangeInfo = ({getExchangeRate, exchangeValue,postReceptionMoney,receive
 
     return (
         <>
-<h1>환율 계산</h1>
-<div>
+<h1 className="Box">환율 계산</h1>
+<div className="Box">
     <p>
         <strong> 송금 국가 : 미국(USD) </strong></p>
     <p>
@@ -44,8 +44,8 @@ const ExchangeInfo = ({getExchangeRate, exchangeValue,postReceptionMoney,receive
     </p>
     <form>
         <label>
-          송금액:
-             <input type="value" value={receptionMoney} onChange={handleReceptionMoney} USD/>
+          <b>송금액 : </b>
+             <input type="value" value={receptionMoney} onChange={handleReceptionMoney}/> <b>USD</b>
         </label>
   	    <br/>
             <input type="submit" value="Submit" onClick={submitReceptionMoney}/>
