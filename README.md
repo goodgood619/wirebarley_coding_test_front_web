@@ -6,6 +6,28 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 In the project directory, you can run:
 
+<br/>
+
+### Version
+
+버젼이 `최신 버젼`입니다!! <br/>
+유의해서 Setup 해주세요.
+* Package Manager : npm
+    * 8.5.0
+* node 
+    * 16.14.2
+
+### 과정
+
+---
+
+### `npm install`
+npm와 node를 install 한 이후에 
+Library를 import 해야 하므로  
+
+`npm install`을 해줍니다.
+
+
 ### `npm start`
 
 Runs the app in the development mode.\
