@@ -18,7 +18,7 @@ docker build -t wirebarley-test-front .
 
 * 그러면, Docker image가 만들어 집니다.
 
-* (BackEnd 소스 출처)[https://github.com/goodgood619/wirebarley_coding_test] 로 이동 후 README의 Docker로 테스트 하기를 계속 진행합니다
+* [BackEnd 소스 출처](https://github.com/goodgood619/wirebarley_coding_test) 로 이동 후 README의 Docker로 테스트 하기를 계속 진행합니다
 
 <br/><br/>
 
